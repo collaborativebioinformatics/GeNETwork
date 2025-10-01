@@ -11,4 +11,6 @@ Nodes for this KG: genes, diseases, drugs, pathway names etc.  Edges: relationsh
 
 Order of operations: Ingestion of GENCODE or HGNC, then CIVIC, then PMTL, then aggregated somatic variant data from Kids First/TARGET (as part of the molecular targets project, see above).  Also aggregated somatic variant data from TCGA if available (by cancer/cohort).
 
+Live version of the below image is at https://excalidraw.com/#room=84a47bb70689327cd820,B6WRlwllBajvdws7goQYjg
+
 ![FlowChart](Untitled-2025-10-01-1244.png)
