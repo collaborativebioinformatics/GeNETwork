@@ -17,4 +17,4 @@ Live version of the below image is at https://excalidraw.com/#room=84a47bb706893
 
 ## Knowledge Graph Schema
 
-![KnowledgeGraphSchema](Knowledge Graph Schema- Day 1.png)
+
