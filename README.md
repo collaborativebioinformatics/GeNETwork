@@ -16,5 +16,5 @@ Live version of the below image is at https://excalidraw.com/#room=84a47bb706893
 ![FlowChart](Untitled-2025-10-01-1244.png)
 
 ## Knowledge Graph Schema
-
+![KGSchema](KGSchema-Day1.png)
 
