@@ -5,7 +5,7 @@
 ## How to Install
 **Clone the Repository**
 ```bash
-git clone https://github.com/collaborativebioinformatics/Variant_Drug_KG.git
+git clone https://github.com/collaborativebioinformatics/GeNETwork.git
 cd GeNETwork
 ```
 **Get the Data**
