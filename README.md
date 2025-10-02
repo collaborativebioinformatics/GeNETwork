@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="GeNETworkLogo.png" alt="GeNETwork Logo" width="500">
+  <img src="GeNETworkLogo.png" alt="Assets/GeNETwork Logo" width="500">
 </p>
 
 ## How to Install
@@ -45,10 +45,10 @@ This project builds a knowledge graph integrating pediatric and adult cancer dat
 
 ## Flowchart 
 Live version of the below image is at https://excalidraw.com/#room=84a47bb70689327cd820,B6WRlwllBajvdws7goQYjg
-![FlowChart](FlowChart_Day2.png)
+![FlowChart](Assets/Flowchart_Day2.png)
 
 ## Knowledge Graph Schema
-![KGSchema](KGSchema-Day1.png)
+![KGSchema](Assets/KGSchema-Day1.png)
 
 ## Data Processing Pipeline
 1. Data Acquisition (OSF/S3??)
