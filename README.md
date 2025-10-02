@@ -1,7 +1,23 @@
-# GeNETwork
+<p align="center">
+  <img src="GeNETworkLogo.png" alt="GeNETwork Logo" width="500">
+</p>
 
 ## How to Install
+**Clone the Repository**
+```bash
+git clone https://github.com/YourOrg/GeNETwork.git
+cd GeNETwork
+```
+**Get the Data**
 
+The knowledge graph is still in development, but the raw data is available on **OSF**: [OSF Project Home](https://osf.io/ef2jw/?view_only=87fe279b56c348b294ff82413f324cd7)
+
+**Requirements (Future Graph Development)**
+Currently, no installation is required beyond accessing the datasets.
+In the near future, we’ll include:
+- Graph database setup (e.g., Amazon Neptune, Neo4j, or RDF tools)
+- ETL scripts to ingest data into the graph
+- Example queries (Gremlin / SPARQL / Cypher)
 ### Prerequisites
 
 ### Dependencies
