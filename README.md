@@ -13,7 +13,7 @@ Order of operations: Ingestion of GENCODE or HGNC, then CIVIC, then PMTL, then a
 
 Live version of the below image is at https://excalidraw.com/#room=84a47bb70689327cd820,B6WRlwllBajvdws7goQYjg
 
-![FlowChart](FlowChart_Day2)
+![FlowChart](FlowChart_Day2.png)
 
 ## Knowledge Graph Schema
 ![KGSchema](KGSchema-Day1.png)
