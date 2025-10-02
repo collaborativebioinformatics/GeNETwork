@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="GeNETworkLogo.png" alt="Assets/GeNETwork Logo" width="500">
+  <img src="Assets/GeNETworkLogo.png" alt="GeNETwork Logo" width="500">
 </p>
 
 ## How to Install
