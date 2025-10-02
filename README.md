@@ -18,11 +18,6 @@ In the near future, we’ll include:
 - Graph database setup (e.g., Amazon Neptune, Neo4j, or RDF tools)
 - ETL scripts to ingest data into the graph
 - Example queries (Gremlin / SPARQL / Cypher)
-### Prerequisites
-
-### Dependencies
-
-### AWS Configuration
 ___
 
 ## Background
