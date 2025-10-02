@@ -1,4 +1,5 @@
-# ATLAS_KG
+# GeNETwork
+
 ## How to Install
 
 ### Prerequisites
