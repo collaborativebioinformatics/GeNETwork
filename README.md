@@ -13,28 +13,21 @@ cd GeNETwork
 The knowledge graph is still in development, but the raw data is available on **OSF**: [OSF Project Home](https://osf.io/ef2jw/?view_only=87fe279b56c348b294ff82413f324cd7)
 
 **Requirements (Future Graph Development)**
+
 Currently, no installation is required beyond accessing the datasets.
 In the near future, we’ll include:
 - Graph database setup (e.g., Amazon Neptune, Neo4j, or RDF tools)
 - ETL scripts to ingest data into the graph
 - Example queries (Gremlin / SPARQL / Cypher)
-___
 
 ## Background
-Analysis target: Pediatric cancers, which have historically been underserved in terms of therapeutic development and clinical trials, as drug companies were not previously required to study pediatric cancers. Most pediatric therapeutic discovery is done by pediatrics researchers, not drug companies.    The FDA's Pediatric Molecular Target List is a list of genes that pediatric clinician experts have outlined as critical to address to treat pediatric cancer. The RACE for Children Act (USA, https://www.congress.gov/bill/115th-congress/house-bill/1231) recently made it a rule that if an actionable mutation or gene for an adult cancer is being targeted by pharma/biotech, and if that target is in the PMTL,then the company must justify why they are not testing it or they must trial the drug in children.
+Pediatric cancers have historically been underserved in therapeutic development and clinical trials. Unlike adult cancers, they were not previously required to be studied by pharmaceutical companies, leaving most pediatric therapeutic discovery to pediatric researchers themselves. 
 
-Basing this project therefore on pediatric cancers, where the data has been harmonized for the Molecular Targets Project (MTP: https://moleculartargets.ccdi.cancer.gov/)  and the FDA PMTL https://moleculartargets.ccdi.cancer.gov/fda-pmtl
+To address this gap, the FDA created the [Pediatric Molecular Target List (PMTL)](https://moleculartargets.ccdi.cancer.gov/fda-pmtl), a list of molecular targets important for studying and developing drugs for pediatric cancers. The [RACE for Children Act, USA]( https://www.congress.gov/bill/115th-congress/house-bill/1231) further strengthened this framework: if a drug company develops a therapy against an actionable mutation or gene in adult cancer, and that gene also appears on the PMTL, the company must either justify excluding pediatric trials or move forward with testing in children.
 
-The Molecular Targets Project's data was produced at the Children's Hospital of Philadelphia with aligned RNA and DNA sequence data by the Kids First Data Resource Center from Kids First, TARGET and other pediatric cancer datasets.  The data was all harmonized with the OpenPedCan  suite of tools https://github.com/d3b-center/OpenPedCan-analysis cited here: https://pubmed.ncbi.nlm.nih.gov/39026781/ and used in the MTP website.
+Building on this foundation, our project focuses on pediatric cancers using harmonized datasets from the [Molecular Targets Project (MTP)](https://moleculartargets.ccdi.cancer.gov/) which integrates genomic data from Kids First, TARGET, and other pediatric cohorts. This work was spearheaded at the Children's Hospital of Philadelphia, which aligned RNA and DNA sequencing data processed by the **Kids First Data Resource Center** and harmonized through the **OpenPedCan suite of tools** ([Github](https://github.com/d3b-center/OpenPedCan-analysis) cited in [Pubmed](https://pubmed.ncbi.nlm.nih.gov/39026781/)
 
-Nodes for this KG: genes, diseases, drugs, pathway names etc.  Edges: relationships. 
-
-Order of operations: Ingestion of GENCODE or HGNC, then CIVIC, then PMTL, then aggregated somatic variant data from Kids First/TARGET (as part of the molecular targets project, see above).  Also aggregated somatic variant data from TCGA if available (by cancer/cohort).
-___ 
-## Overview
-We call this ATLAS_KG: the Actionable Therapeutics Linkage for Age-Stratified cancers Knowledge Graph. Like a geographic atlas helps you navigate terrain, ATLAS_KG helps navigate the landscape of therapeutic opportunities connecting adult and pediatric cancer precision medicine.
-
----
+Together, these resources provide a robust and unified data foundation to explore pediatric-specific therapeutic opportunities that align with both clinical priorities (PMTL) and regulatory requirements (RACE Act).
 
 # Methods
 This project builds a knowledge graph integrating pediatric and adult cancer data to answer multiple queries including identifying repurposing opportunities mandated by the RACE for Children Act. 
