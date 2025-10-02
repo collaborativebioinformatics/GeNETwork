@@ -32,15 +32,16 @@ Together, these resources provide a robust and unified data foundation to explor
 # Methods
 
 ## Data Sources
-|Source | Purpose | Access |
-| :--: | :--: | :--: |
-| Molecular Targets Project | Pediatric Molecular targets and PMTL | [Link](https://moleculartargets.ccdi.cancer.gov)
-| TCGA | Adult Cancer Somatic Mutations | |
-| CIViC | Clinical variant interpretations | [Link](https://civicdb.org/welcome) |
-| OncoDB | Drug-target interactions | |
-| MSigDB | Pathway gene sets | | 
-| HGNC | Gene nomenclature standardization | |
-| StringDB | Protein-protein interactions | |
+|Source | Purpose | 
+| :--: | :--: | 
+| [Molecular Targets Project](https://moleculartargets.ccdi.cancer.gov) | Catalog of Molecular Targets |
+| [FDA PMTL](https://moleculartargets.ccdi.cancer.gov/fda-pmtl) | Pediatric Cancer Target List |
+| [TCGA](https://portal.gdc.cancer.gov) | Adult Cancer Somatic Mutations |
+| [CIViC](https://civicdb.org/welcome) | Clinical variant interpretations |
+| [OncoDB](https://oncodb.org) | Drug-target interactions |
+| [MSigDB](https://www.gsea-msigdb.org/gsea/msigdb) | Pathway gene sets | 
+| [HGNC](https://www.genenames.org) | Gene nomenclature standardization | 
+| [StringDB](https://string-db.org) | Protein-protein interactions | 
 
 ## Flowchart 
 ![FlowChart](Assets/Flowchart_Day2.png)
@@ -52,14 +53,8 @@ Together, these resources provide a robust and unified data foundation to explor
 **Data Processing**
 
    - Downloaded datasets (TSV, JSON)
-   - Standrdized Schemas for each dataset from different sources using `gene_name` as primary key
+   - Standardized Schemas for each dataset from different sources using `gene_name` as primary key
    - Load to Open Science Framework (OSF)
-
-**ETL/Harmonization**
-
-  - Filter significant data
-  - Map IDs
-  - Match PMTL genes
     
 **Knowledge Graph Construction**
 
