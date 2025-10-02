@@ -30,7 +30,6 @@ Building on this foundation, our project focuses on pediatric cancers using harm
 Together, these resources provide a robust and unified data foundation to explore pediatric-specific therapeutic opportunities that align with both clinical priorities (PMTL) and regulatory requirements (RACE Act).
 
 # Methods
-This project builds a knowledge graph integrating pediatric and adult cancer data to answer multiple queries including identifying repurposing opportunities mandated by the RACE for Children Act. 
 
 ## Data Sources
 |Source | Purpose | Access |
@@ -44,15 +43,44 @@ This project builds a knowledge graph integrating pediatric and adult cancer dat
 | StringDB | Protein-protein interactions | |
 
 ## Flowchart 
-Live version of the below image is at https://excalidraw.com/#room=84a47bb70689327cd820,B6WRlwllBajvdws7goQYjg
 ![FlowChart](Assets/Flowchart_Day2.png)
 
 ## Knowledge Graph Schema
 ![KGSchema](Assets/KGSchema-Day1.png)
 
 ## Data Processing Pipeline
-1. Data Acquisition (OSF/S3??)
-2. Preprocessing: StringDB will be 
-4. Graph Construction: Data transformed to triples and loaded into AWS Neptune. StringDB will be added to ensure network connectivity. 
-5. Quality Control
+**Data Processing**
 
+   - Downloaded datasets (TSV, JSON)
+   - Standrdized Schemas for each dataset from different sources using `gene_name` as primary key
+   - Load to Open Science Framework (OSF)
+
+**ETL/Harmonization**
+
+  - Filter significant data
+  - Map IDs
+  - Match PMTL genes
+    
+**Knowledge Graph Construction**
+
+  - Define Node types
+  - Define relationships (edges)
+  - Define properties
+  - Load data on AWS Neptune
+
+**Analysis & Querying**
+
+  -  Use *SPARQL*
+  - - Cross-age repurposing via shared variants
+    - Pathway-level repurposing
+    - TCGA-specific insights
+    - Drug-Repurposing Opportunities
+    - Variants in Both Adult and Pediatric Cancers
+    - Co-mutation Analysis
+    - Therapeutic Gaps
+    - Paths from Variant to Drug
+   
+**Visualization/Outputs**
+
+  - Network/ Graph Visualizations
+  - Downloadable Summary Tables
