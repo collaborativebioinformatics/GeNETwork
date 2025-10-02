@@ -17,7 +17,7 @@ The knowledge graph is still in development, but the raw data is available on **
 Currently, no installation is required beyond accessing the datasets.
 In the near future, we’ll include:
 - Graph database setup (e.g., Amazon Neptune, Neo4j, or RDF tools)
-- ETL scripts to ingest data into the graph
+- ETL scripts to ingest compatible data into the graph
 - Example queries (Gremlin / SPARQL / Cypher)
 
 ## Background
