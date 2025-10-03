@@ -133,6 +133,7 @@ def write_nodes(conn):
         )
         -- create node ids
         SELECT
+            row_number() OVER (ORDER BY name) AS id,
             name,
             label
         FROM nodes;
