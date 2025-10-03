@@ -22,4 +22,4 @@ All data processing is done with [duckdb](https://duckdb.org/). `uv` will automa
 
 ## Outputs 
 
-The node and edge lists [are available to download]([https://osf.io/6qavy).
+The node and edge lists [are available to download](https://osf.io/6qavy)
