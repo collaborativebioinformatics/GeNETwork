@@ -5,10 +5,10 @@ This script creates a graph from [OncoDB's](https://oncodb.org/) gene expression
 
 ## Running the script
 
-You need [`uv`](https://docs.astral.sh/uv/) on your computer:
+You need [`uv`](https://docs.astral.sh/uv/) to get started:
 
 ```python
-uv run make_oncodb_graph.py
+$ uv run make_oncodb_graph.py
 ```
 
 The script:
