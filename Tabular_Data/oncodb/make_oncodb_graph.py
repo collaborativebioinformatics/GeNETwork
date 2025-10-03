@@ -175,6 +175,8 @@ def write_edges(conn):
         FROM to_ids
     );
     """)
+    conn.sql("SELECT * FROM edges").write_csv("edges.csv")
+
 
 
 def main():
