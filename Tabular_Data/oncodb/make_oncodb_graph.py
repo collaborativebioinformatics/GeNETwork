@@ -6,6 +6,8 @@
 # ///
 
 import pathlib
+import shutil
+import os
 import zipfile
 
 import duckdb
@@ -131,14 +133,15 @@ def write_nodes(conn):
         )
         -- create node ids
         SELECT
-            'v' || row_number() OVER (ORDER BY name, label) AS id,
             name,
             label
         FROM nodes;
     """)
     # make sure each node is unique
     conn.sql("ALTER TABLE nodes ADD PRIMARY KEY (name)")
-    conn.sql("SELECT * FROM nodes").write_csv("nodes.csv")
+    conn.sql("SELECT * FROM nodes").write_csv(
+        "nodes", partition_by=["label"], overwrite=True
+    )
 
 
 def write_edges(conn):
@@ -150,33 +153,26 @@ def write_edges(conn):
             UNION ALL
             SELECT *
             FROM methylation_view
-        ),
-        from_ids AS (
-            SELECT *,
-             nodes.id AS from
-            FROM all_data
-            JOIN nodes ON all_data.subject = nodes.name
-        ),
-        to_ids AS (
-            SELECT *,
-             nodes.id AS to
-            FROM from_ids
-            JOIN nodes ON from_ids.object = nodes.name
         )
         SELECT
-            'e' || row_number() OVER (ORDER BY "from", "to") AS id,
-             "from",
-             "to",
-             'gene_associated_with_oncodb' AS label,
-             'OncoDB' AS source,
-             data_type,
+             subject AS "from",
+             object AS "to",
+             "data_type",
              p,
              change
-        FROM to_ids
+        FROM all_data
     );
     """)
     conn.sql("SELECT * FROM edges").write_csv("edges.csv")
 
+
+def zip_output():
+    # make a zip of the 'nodes' directory
+    shutil.make_archive("oncodb", "zip", root_dir="nodes")
+
+    # add 'edges.csv' to the existing zip
+    with zipfile.ZipFile("oncodb.zip", "a", zipfile.ZIP_DEFLATED) as zipf:
+        zipf.write("edges.csv", os.path.basename("edges.csv"))
 
 
 def main():
@@ -188,6 +184,7 @@ def main():
         load_methylation(duckdb_conn)
         write_nodes(duckdb_conn)
         write_edges(duckdb_conn)
+        zip_output()
 
 
 if __name__ == "__main__":
