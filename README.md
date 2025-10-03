@@ -65,7 +65,7 @@ Together, these resources provide a robust and unified data foundation to explor
 
 **Analysis & Querying**
 
-  -  Use *SPARQL*
+  -  Use *Cypher*
   - - Cross-age repurposing via shared variants
     - Pathway-level repurposing
     - TCGA-specific insights
