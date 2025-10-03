@@ -22,7 +22,7 @@ MERGE (d)-[r:INTERACTS_WITH]->(ds)
 SET r.maxClinicalTrialPhase = toInteger(row.maxClinicalTrialPhase);
 ```
 
-Cypher code to query data:
+Example Cypher code to query data:
 
 ```
 MATCH p=()-[r:INTERACTS_WITH]->() RETURN p LIMIT 1000
@@ -47,7 +47,7 @@ MERGE (p:Pathway {name: row.pathway})
 MERGE (g)-[:MEMBER_OF {source: row.source}]->(p);
 ```
 
-Cypher code to load data (Focus on a Specific gene):
+Example Cypher code to query data (Focus on a Specific gene):
 
 ```
 MATCH (g:Gene {name: "TP53"})-[r:MEMBER_OF]->(p:Pathway)
