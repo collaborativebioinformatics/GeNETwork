@@ -1,0 +1,23 @@
+oncodb,description,doid
+BLCA,Bladder Urothelial Carcinoma,DOID:4006
+BRCA,Breast Invasive Carcinoma,DOID:3458
+CESC,Cervical Squamous Cell Carcinoma and Endocervical Adenocarcinoma,DOID:5524
+CHOL,Cholangiocarcinoma,DOID:4947
+COAD,Colon Adenocarcinoma,DOID:234
+ESCA,Esophageal Carcinoma,DOID:1107
+GBM,Gliobastoma Multiforma,DOID:3068
+HNSC,Head and Neck Squamous Cell Carcinoma,DOID:5520
+KICH,Kidney Chromophobe,DOID:4471
+KIRC,Kidney Renal Clear Cell Carcinoma,DOID:4467
+KIRP,Kidney Renal Papillary Cell Carcinoma,DOID:4465
+LIHC,Liver Hepatocellular Carcinoma,DOID:684
+LUAD,Lung Adenocarcinoma,DOID:3910
+LUSC,Lung Squamous Cell Carcinoma,DOID:3907
+PAAD,Pancreatic Adenocarcinoma,DOID:4074
+PCPG,Pheochromocytoma and Paraganglioma,DOID:0050773
+PRAD,Prostate Adenocarcinoma,DOID:2526
+READ,Rectum Adenocarcinoma,DOID:1996
+SARC,Sarcoma,DOID:1115
+THCA,Thyroid Carcinoma,DOID:3963
+THYM,Thymoma,DOID:3275
+UCEC,Uterine Corpus Endometrial Carcinoma,DOID:0050939
