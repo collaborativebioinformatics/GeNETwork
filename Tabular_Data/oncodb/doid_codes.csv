@@ -1,23 +1,23 @@
-oncodb,description,doid
-BLCA,Bladder Urothelial Carcinoma,DOID:4006
-BRCA,Breast Invasive Carcinoma,DOID:3458
-CESC,Cervical Squamous Cell Carcinoma and Endocervical Adenocarcinoma,DOID:5524
-CHOL,Cholangiocarcinoma,DOID:4947
-COAD,Colon Adenocarcinoma,DOID:234
-ESCA,Esophageal Carcinoma,DOID:1107
-GBM,Gliobastoma Multiforma,DOID:3068
-HNSC,Head and Neck Squamous Cell Carcinoma,DOID:5520
-KICH,Kidney Chromophobe,DOID:4471
-KIRC,Kidney Renal Clear Cell Carcinoma,DOID:4467
-KIRP,Kidney Renal Papillary Cell Carcinoma,DOID:4465
-LIHC,Liver Hepatocellular Carcinoma,DOID:684
-LUAD,Lung Adenocarcinoma,DOID:3910
-LUSC,Lung Squamous Cell Carcinoma,DOID:3907
-PAAD,Pancreatic Adenocarcinoma,DOID:4074
-PCPG,Pheochromocytoma and Paraganglioma,DOID:0050773
-PRAD,Prostate Adenocarcinoma,DOID:2526
-READ,Rectum Adenocarcinoma,DOID:1996
-SARC,Sarcoma,DOID:1115
-THCA,Thyroid Carcinoma,DOID:3963
-THYM,Thymoma,DOID:3275
-UCEC,Uterine Corpus Endometrial Carcinoma,DOID:0050939
+oncodb,description,doid,efoid
+BLCA,Bladder Urothelial Carcinoma,DOID:4006,EFO:0006544
+BRCA,Breast Invasive Carcinoma,DOID:3458,EFO:0000304
+CESC,Cervical Squamous Cell Carcinoma and Endocervical Adenocarcinoma,DOID:5524,EFO:0001061
+CHOL,Cholangiocarcinoma,DOID:4947,EFO:0005540
+COAD,Colon Adenocarcinoma,DOID:234,EFO:0001061
+ESCA,Esophageal Carcinoma,DOID:1107,EFO:0002916
+GBM,Gliobastoma Multiforma,DOID:3068,EFO:0000519
+HNSC,Head and Neck Squamous Cell Carcinoma,DOID:5520,EFO:0000181
+KICH,Kidney Chromophobe,DOID:4471,MONDO:0017885
+KIRC,Kidney Renal Clear Cell Carcinoma,DOID:4467,MONDO:0005005
+KIRP,Kidney Renal Papillary Cell Carcinoma,DOID:4465,EFO:0000640
+LIHC,Liver Hepatocellular Carcinoma,DOID:684,EFO:0000182
+LUAD,Lung Adenocarcinoma,DOID:3910,EFO:0000571
+LUSC,Lung Squamous Cell Carcinoma,DOID:3907,EFO:0000708
+PAAD,Pancreatic Adenocarcinoma,DOID:4074,EFO:1000044
+PCPG,Pheochromocytoma and Paraganglioma,DOID:0050773,EFO:1000453
+PRAD,Prostate Adenocarcinoma,DOID:2526,EFO:0000673
+READ,Rectum Adenocarcinoma,DOID:1996,EFO:0005631
+SARC,Sarcoma,DOID:1115,EFO:0000691
+THCA,Thyroid Carcinoma,DOID:3963,EFO:0002892
+THYM,Thymoma,DOID:3275,EFO:1000581
+UCEC,Uterine Corpus Endometrial Carcinoma,DOID:0050939,MONDO:0000553
