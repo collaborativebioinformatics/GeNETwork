@@ -15,6 +15,8 @@ The script:
 
 * Downloads expression and methylation bulk data zip files from OncoDB
 * Filters genes to include only significant associations (p < 0.05) after FDR correction
+* OncoDB's disease codes are remapped to [Disease Ontology](https://disease-ontology.org/) terms
 * Two plain text files are output, containing nodes and edges.
 
 All data processing is done with [duckdb](https://duckdb.org/). `uv` will automatically install all dependencies thanks to [PEP723](https://peps.python.org/pep-0723/). 
+
