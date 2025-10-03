@@ -75,7 +75,7 @@ def load_expression(conn):
         SELECT
             f.subject,
             f.predicate,
-            d.doid AS object,
+            d.efoid AS object,
             f.data_type,
             f.p,
             f.change
@@ -102,7 +102,7 @@ def load_methylation(conn):
         SELECT
             f.subject,
             f.predicate,
-            d.doid AS object,
+            d.efoid AS object,
             f.data_type,
             f.p,
             f.beta_diff
