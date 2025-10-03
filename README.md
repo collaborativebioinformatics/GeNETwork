@@ -38,7 +38,7 @@ Together, these resources provide a robust and unified data foundation to explor
 | [FDA PMTL](https://moleculartargets.ccdi.cancer.gov/fda-pmtl) | Pediatric Cancer Target List |
 | [TCGA](https://portal.gdc.cancer.gov) | Adult Cancer Somatic Mutations |
 | [CIViC](https://civicdb.org/welcome) | Clinical variant interpretations |
-| [OncoDB](https://oncodb.org) | Gene methylation and expression data |
+| [OncoDB](https://oncodb.org) | Drug-target interactions |
 | [MSigDB](https://www.gsea-msigdb.org/gsea/msigdb) | Pathway gene sets | 
 | [HGNC](https://www.genenames.org) | Gene nomenclature standardization | 
 | [StringDB](https://string-db.org) | Protein-protein interactions | 
