@@ -20,3 +20,6 @@ The script:
 
 All data processing is done with [duckdb](https://duckdb.org/). `uv` will automatically install all dependencies thanks to [PEP723](https://peps.python.org/pep-0723/). 
 
+## Outputs 
+
+The node and edge lists [are available to download](https://www.ebi.ac.uk/efo/).
